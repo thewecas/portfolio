@@ -271,6 +271,10 @@ section:nth-child(3) {
         max-height: fit-content;
     }
 
+    .leftbox a {
+        font-size: 1.2rem;
+    }
+
 
     .rightbox {
         width: 100%;
@@ -289,19 +293,20 @@ section:nth-child(3) {
     }
 
     .left span {
-        margin: 10px;
+        margin: 0px;
         padding: 0;
         margin-left: 40px;
+
     }
 
     .left span:first-child {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: inline;
 
     }
 
     .left span:nth-child(2) {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: inline;
         margin: 0;
         font-weight: 400;
@@ -311,15 +316,15 @@ section:nth-child(3) {
     .left span:nth-child(2)>em {
         display: block;
         margin-left: 40px;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .left span:nth-child(3) {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
     }
 
     .left span:nth-child(4) em {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .leftbox a {
@@ -335,19 +340,25 @@ section:nth-child(3) {
     }
 
     .skills>span {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
     }
 
     .skills ul li,
     .skills ol li {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    section.connect {
+        height: 30px;
     }
 
     .connect p {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .connect span {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 }
