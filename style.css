@@ -263,8 +263,30 @@ section:nth-child(3) {
 
 @media only screen and (max-width:768px) {
 
+    nav .title {
+        font-size: 1.5rem;
+    }
+
     section:nth-child(2) {
         flex-direction: column-reverse;
+    }
+
+    nav .links .link {
+        font-size: 1rem;
+    }
+
+    .link img {
+        width: 20px;
+    }
+
+    nav .links {
+        margin: 20px;
+        margin-inline: auto;
+
+    }
+
+    .link {
+        margin: auto;
     }
 
     .leftbox {
