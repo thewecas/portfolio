@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid pink; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 75px;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: block;
+    padding: 10px 20px;
+    color: rgb(6, 33, 55);
+}
+
+
+
+.links {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.link {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.link>a {
+    display: flex;
+    align-items: center;
+    color: rgb(34, 33, 59);
+    font-weight: 500;
+}
+
+.link>a:last-child {
+    margin-right: 20px;
+}
+
+.link {
+    position: relative;
+}
+
+.links>*::before {
+    content: '';
+    display: block;
+    background-color: blue;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
+}
+
+.links>*:hover::before {
+    width: 100%;
+}
+
+.icon {
+    width: 25px;
+    margin: 10px;
+    display: block;
+}
+
+section {
+    display: flex;
+    height: 100%;
+}
+
+.leftbox {
+    width: 55%;
+    max-height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.left>* {
+    display: block;
+    margin: 0px 100px;
+    letter-spacing: 2px;
+}
+
+.left>*:first-child {
+    font-size: 2.5rem;
+}
+
+.left>*:nth-child(2) {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.left>*:nth-child(2)>em {
+    font-weight: 700;
+    font-size: 4rem;
+    color: rgb(34, 108, 244);
+    font-style: normal;
+}
+
+.left>*:nth-child(3) {
+    font-size: 2.5rem;
+}
+
+.left>*:nth-child(4)>em {
+    font-size: 3.5rem;
+    color: rgb(34, 108, 244);
+    font-weight: 600;
+
+}
+
+.leftbox>a {
+    width: 200px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+    margin: 50px 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: rgb(39, 132, 255);
+}
+
+.leftbox>A:hover {
+    background-color: rgb(25, 125, 255);
+    font-weight: 500;
+}
+
+.rightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    /* border: 1px solid black */
+}
+
+.profile {
+    width: 80%;
+    border-radius: 50%;
+    transition: all 30ms ease-in-out;
+}
+
+
+section:nth-child(3) {
+    background-color: rgb(195, 215, 253);
+    background-color: rgb(254, 254, 255);
+    color: black;
+    display: flex;
+    gap: 50px;
+    min-height: 60vh;
+    padding: 50px;
+    margin-top: 80px;
+}
+
+.skills {
+    width: 50%;
+    /* margin: 50px; */
+    padding: 20px;
+    letter-spacing: 2px;
+    border: 2px solid blue;
+    position: relative;
+}
+
+
+.skills:hover span {
+    font-style: italic;
+}
+
+.skills>span {
+    display: block;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 50px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 5px;
+    color: rgb(3, 3, 39);
+}
+
+.skills ul,
+.skills ol {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-inline: auto;
+}
+
+.skills li {
+    font-size: 1.5rem;
+}
+
+.skills li:hover {
+    font-weight: 500;
+}
+
+.connect {
+    background-color: rgb(34, 108, 244);
+    min-height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+}
+
+.connect p {
+    font-size: 4rem;
+    text-transform: uppercase;
+
+
+}
+
+.connect span {
+    display: block;
+    font-size: 5rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.connect em {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.connect span {
+    position: relative;
+}
+
+.connect span::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    display: block;
+    background-color: rgb(4, 0, 0);
+    position: relative;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.connect span:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width:768px) {
+
+    section:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .leftbox {
+        max-height: fit-content;
+    }
+
+
+    .rightbox {
+        width: 100%;
+
+    }
+
+    .profile {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .leftbox {
+        width: 100%;
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .left span {
+        margin: 10px;
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    .left span:first-child {
+        font-size: 1.7rem;
+        display: inline;
+
+    }
+
+    .left span:nth-child(2) {
+        font-size: 1.7rem;
+        display: inline;
+        margin: 0;
+        font-weight: 400;
+
+    }
+
+    .left span:nth-child(2)>em {
+        display: block;
+        margin-left: 40px;
+        font-size: 3.5rem;
+    }
+
+    .left span:nth-child(3) {
+        font-size: 1.7rem;
+    }
+
+    .left span:nth-child(4) em {
+        font-size: 3rem;
+    }
+
+    .leftbox a {
+        margin-inline: auto;
+    }
+
+    section:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .skills>span {
+        font-size: 2rem;
+    }
+
+    .skills ul li,
+    .skills ol li {
+        font-size: 1.5rem;
+    }
+
+    .connect p {
+        font-size: 2rem;
+    }
+
+    .connect span {
+        font-size: 3rem;
+    }
+}
