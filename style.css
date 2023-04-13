@@ -87,7 +87,7 @@ section {
 
 .leftbox {
     width: 55%;
-    max-height: calc(100vh - 75px);
+    /* max-height: calc(100vh - 75px); */
     display: flex;
     flex-direction: column;
     padding-top: 150px;
